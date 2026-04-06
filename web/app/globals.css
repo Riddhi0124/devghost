@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: #0b1220;
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(124, 58, 237, 0.18), transparent 55%),
+    radial-gradient(900px 500px at 80% 0%, rgba(14, 165, 233, 0.14), transparent 50%),
+    #060814;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 18px 60px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 1), rgba(14, 165, 233, 1));
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.brandTitle {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brandTitle strong {
+  color: #eaf0ff;
+  letter-spacing: 0.2px;
+}
+
+.brandTitle span {
+  color: rgba(234, 240, 255, 0.7);
+  font-size: 12px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.card {
+  border: 1px solid rgba(234, 240, 255, 0.12);
+  background: rgba(10, 12, 26, 0.72);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.title {
+  margin: 0 0 10px;
+  color: #eaf0ff;
+  font-size: 44px;
+  letter-spacing: -0.6px;
+  line-height: 1.02;
+}
+
+.subtitle {
+  margin: 0 0 14px;
+  color: rgba(234, 240, 255, 0.72);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.pillRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.pill {
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  color: rgba(234, 240, 255, 0.85);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.scanForm {
+  display: grid;
+  gap: 10px;
+}
+
+.inputRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  outline: none;
+  background: rgba(255, 255, 255, 0.04);
+  color: #eaf0ff;
+}
+
+.input::placeholder {
+  color: rgba(234, 240, 255, 0.45);
+}
+
+.button {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(234, 240, 255, 0.16);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(14, 165, 233, 0.95));
+  color: #071022;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(234, 240, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(234, 240, 255, 0.9);
+  cursor: pointer;
+}
+
+.button:disabled,
+.buttonSecondary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.muted {
+  color: rgba(234, 240, 255, 0.65);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.stat {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(234, 240, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.statLabel {
+  color: rgba(234, 240, 255, 0.65);
+  font-size: 12px;
+}
+
+.statValue {
+  color: #eaf0ff;
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.statusRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid rgba(234, 240, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(234, 240, 255, 0.9);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(234, 240, 255, 0.6);
+}
+
+.dotQueued {
+  background: rgba(234, 240, 255, 0.55);
+}
+.dotPending {
+  background: rgba(245, 158, 11, 0.95);
+}
+.dotRunning {
+  background: rgba(14, 165, 233, 0.95);
+}
+.dotSuccess {
+  background: rgba(34, 197, 94, 0.95);
+}
+.dotError {
+  background: rgba(239, 68, 68, 0.95);
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 16px;
+  color: rgba(234, 240, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.finding {
+  border: 1px solid rgba(234, 240, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.findingTitle {
+  color: #eaf0ff;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+.findingMeta {
+  color: rgba(234, 240, 255, 0.66);
+  font-size: 12px;
+}
+
+.findingDesc {
+  color: rgba(234, 240, 255, 0.8);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.footer {
+  margin-top: 18px;
+  color: rgba(234, 240, 255, 0.55);
+  font-size: 12px;
+}
+
+@media (max-width: 920px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
