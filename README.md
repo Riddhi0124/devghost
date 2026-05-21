@@ -1,4 +1,4 @@
-# DevGhost
+# DevGhost~
 
 DevGhost analyzes a GitHub repository and produces:
 
