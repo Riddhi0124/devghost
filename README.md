@@ -49,7 +49,7 @@ DevGhost analyzes a GitHub repository and produces:
    npm run dev
    ```
 
-## Current Status
+## Current Status:
 
 This is an initial scaffold with health/status endpoints and a simple scan job flow.
 Next steps include repo cloning, static analysis adapters, and LLM finding enrichment.
